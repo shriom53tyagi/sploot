@@ -1,0 +1,41 @@
+{
+    "name": "Backend",
+    "version": "1.0.0",
+    "description": "Backend for Assignment",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon server.js",
+        "concurrent": "concurrently \"nodemon server.js\" \"npm run client\"",
+        "start": "node server.js",
+        "serve:proxy": "ngrok http 3000"
+    },
+    "author": "shriom <shriomtyagi1998@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@sendgrid/mail": "^7.7.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3",
+        "express-sslify": "^1.2.0",
+        "express-validator": "^5.3.0",
+        "helmet": "^3.15.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.3.1",
+        "url-parse": "^1.5.10"
+    },
+    "devDependencies": {
+        "concurrently": "^7.6.0",
+        "eslint": "^5.9.0",
+        "eslint-config-prettier": "^3.3.0",
+        "eslint-plugin-prettier": "^3.0.0",
+        "jest": "^23.6.0",
+        "morgan": "^1.9.1",
+        "nodemon": "^1.18.9",
+        "prettier": "^1.15.3",
+        "supertest": "^3.3.0",
+        "winston": "^3.1.0"
+    }
+}
